@@ -15,7 +15,7 @@ export default function Form() {
 
     return (
         <div className='form'>
-            <form onSubmit={handleSubmit}>
+            <form data-testid='form' onSubmit={handleSubmit}>
                 <input type='text' label='Username' value={values.username} onChange={handleChanges} name='username'/>
                 <input type='text' label='Password' value={values.password} onChange={handleChanges} name='password'/>
                 <button type='submit'>Form</button>

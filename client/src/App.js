@@ -8,7 +8,7 @@ class App extends React.Component {
     players: [],
     playerName: [],
     playerCountry: [],
-    searches: []
+    searches: [],
   }
 
   componentDidMount() {
@@ -23,11 +23,11 @@ class App extends React.Component {
 
   render() {
     return(
-    <div className="App" data-testid='app'>
+    <div className="App" data-testid='App'>
       <div className='header'>
-        <h1>Players</h1>
+        <h1 data-testid='title'>Players</h1>
         {/* <Form /> */}
-        <div className='player-cards'>
+        <div className='player-cards' data-testid='returned-cards'>
           {this.state.players.map(player => (
             <div key={player.id}>
               <h2 className='name'>{player.name}</h2>
