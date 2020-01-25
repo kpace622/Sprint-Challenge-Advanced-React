@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.player-cards {
+  display: flex;
+  flex-flow: wrap;
+}
