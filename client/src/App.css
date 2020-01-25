@@ -32,8 +32,24 @@
   }
 }
 
+.App {
+  background-color: #3AAFa9;
+}
 
 .player-cards {
   display: flex;
+  justify-content: space-around;
   flex-flow: wrap;
+}
+
+.player-cards h2 {
+  margin: 50px;
+}
+
+.name {
+  color: #17252A;
+}
+
+h1 {
+  color: #FEFFFF;
 }

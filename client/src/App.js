@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import Form from './Form';
 
 class App extends React.Component {
 
@@ -22,12 +23,17 @@ class App extends React.Component {
 
   render() {
     return(
-    <div className="App">
+    <div className="App" data-testid='app'>
       <div className='header'>
         <h1>Players</h1>
+        {/* <Form /> */}
         <div className='player-cards'>
           {this.state.players.map(player => (
-            <h2 key={player.id}>{player.name}</h2>
+            <div key={player.id}>
+              <h2 className='name'>{player.name}</h2>
+              <p>{player.country}</p>
+              <p>{player.searches}</p>
+            </div>
           ))}
         </div>
       </div>
